@@ -8,15 +8,17 @@ CUDA 12.2
 For installation of the project dependencies, please run:
 pip install -r requirements.txt
 # Dataset
-Human3.6M：data/motion3d.
+  ## Human3.6M：data/motion3d.
 Slice the motion clips by running the following python code in directory:data/preprocess
-For MAPAGFormer-Base and MotionAGFormer-Large:
-python h36m.py  --n-frames 243
+For MAPAGFormer-Base and MotionAGFormer-Large:python h36m.py  --n-frames 243
 For MAPAGFormer-Small:python h36m.py --n-frames 81
 For MAPAGFormer-XSmall:python h36m.py --n-frames 27
-MPI-INF-3DHP:motion3d.
+  ## MPI-INF-3DHP:motion3d.
 # Training
 After dataset preparation, you can train the model as follows:
-Human3.6M:You can train Human3.6M with the following command:
-python train.py --config <PATH-TO-CONFIG>
-MPI-INF-3DHP:You can train MPI-INF-3DHP with the following command:python train_3dhp.py --config <PATH-TO-CONFIG>
+  ## Human3.6M:
+  You can train Human3.6M with the following command:
+  python train.py --config <PATH-TO-CONFIG>
+  ## MPI-INF-3DHP:
+  You can train MPI-INF-3DHP with the following command:
+  python train_3dhp.py --config <PATH-TO-CONFIG>
