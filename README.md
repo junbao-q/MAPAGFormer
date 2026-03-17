@@ -17,7 +17,7 @@ For MAPAGFormer-Small:
                    python h36m.py --n-frames 81
 For MAPAGFormer-XSmall:
                    python h36m.py --n-frames 27
-    ## MPI-INF-3DHP:motion3d.
+    ## MPI-INF-3DHP: motion3d.
 # Training
 After dataset preparation, you can train the model as follows:
      ## Human3.6M:
