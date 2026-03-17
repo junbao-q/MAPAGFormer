@@ -49,3 +49,16 @@ python train.py --config <PATH-TO-CONFIG>
 ```bash
 python train_3dhp.py --config <PATH-TO-CONFIG>
 ```  
+# Evaluation
+You can evaluate Human3.6M models by:
+```bash
+python train.py --eval-only --checkpoint <CHECKPOINT-DIRECTORY> --checkpoint-file <CHECKPOINT-FILE-NAME> --config <PATH-TO-CONFIG>
+```
+For example if MAPAGFormer-s of H.36M is downloaded and put in directory, then we can run:
+```bash
+python train.py --eval-only --checkpoint checkpoint --checkpoint-file MAPAGFormer-s-h36m.pth.tr --config configs/h36m/MAPAGFormer-small.yaml
+```
+Similarly, MPI-INF-3DHP can be evaluated as follows:
+```bash
+python train_3dhp.py --eval-only --checkpoint <CHECKPOINT-DIRECTORY> --checkpoint-file <CHECKPOINT-FILE-NAME> --config <PATH-TO-CONFIG>
+```
