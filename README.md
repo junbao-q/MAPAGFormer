@@ -11,7 +11,6 @@ pip install -r requirements.txt
     ## Human3.6M：data/motion3d.
 Slice the motion clips by running the following python code in directory:data/preprocess
 For MAPAGFormer-Base and MotionAGFormer-Large:
-
                    python h36m.py  --n-frames 243
 For MAPAGFormer-Small:
                    python h36m.py --n-frames 81
@@ -22,7 +21,7 @@ For MAPAGFormer-XSmall:
 After dataset preparation, you can train the model as follows:
      ## Human3.6M:
   You can train Human3.6M with the following command:
-  python train.py --config <PATH-TO-CONFIG>
+             python train.py --config <PATH-TO-CONFIG>
      ## MPI-INF-3DHP:
   You can train MPI-INF-3DHP with the following command:
-  python train_3dhp.py --config <PATH-TO-CONFIG>
+             python train_3dhp.py --config <PATH-TO-CONFIG>
