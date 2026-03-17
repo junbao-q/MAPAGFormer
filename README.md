@@ -21,6 +21,8 @@ pip install -r requirements.txt
 
 ## Dataset
 ## Human3.6M：data/motion3d
+Download the fine-tuned Stacked Hourglass detections of preprocessed H3.6M data [here](#https://onedrive.live.com/?id=A5438CD242871DF0%21206&resid=A5438CD242871DF0%21206&e=vobkjZ&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBdkFkaDBMU2pFT2xnVTdCdVVaY3lhZnU4a3pjP2U9dm9ia2pa&cid=a5438cd242871df0&v=validatepermission) and unzip it to 'data/motion3d'.
+
 Slice the motion clips by running the following python code in directory:data/preprocess
 
 For MAPAGFormer-Base and MAPAGFormer-Large:
